@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    background-color: #f5f5f5;
+
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.sidebar {
+    margin-left: 100px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 200px;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+    display: block;
+    margin-top: 20px;
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    nav ul li {
+        padding: 4px 0;
+    }
+
+    .checkbox {
+        font-size: 1.2rem;
+    }
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.productcard {
+    position: relative;
+    width: 70%;
+}
+
+.cardimage {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logincart {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.cartindicator {
+    position: absolute;
+    top: 8px;
+    right: 18px;
+}
+
+.shoppingbutton {
+    position: relative;
+}
+
+
+.logincarddiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+}
+
+
+.adminaddproductdiv {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.adminadddiv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+
+    .mb-2 {
+        text-align: center;
+    }
+}
+
+
+.newsvg {
+    fill: green;
+    position: absolute;
+    top: 25;
+    left: 0;
+}
+
+.sharebutton {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.sharebuttons{
+    display: flex;
+    gap: 10px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .products {
+        margin-left: 0;
+        padding-left: 0;
+        gap: 10px;
+        padding-top: 55px;
+    }
+
+    .productcard {
+        width: 47%;
+        justify-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        gap: 0;
+
+        .searchbar {
+            display: flex;
+            justify-content: space-between;
+            gap: 0;
+        }
+
+    }
+
+
+
+
+
+
+}

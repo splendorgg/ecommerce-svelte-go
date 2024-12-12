@@ -1,0 +1,54 @@
+<script>
+    import { Checkbox } from "flowbite-svelte";
+    export let selectedBrands;
+</script>
+
+<aside class="sidebar">
+    <nav>
+        <h3>Brands</h3>
+        <ul>
+            <li>
+                <Checkbox
+                    bind:group={selectedBrands}
+                    value="samsung"
+                    class="checkbox">Samsung</Checkbox
+                >
+            </li>
+            <li>
+                <Checkbox
+                    bind:group={selectedBrands}
+                    value="asus"
+                    class="checkbox">Asus</Checkbox
+                >
+            </li>
+            <li>
+                <Checkbox
+                    bind:group={selectedBrands}
+                    value="lg"
+                    class="checkbox">LG</Checkbox
+                >
+            </li>
+            <li>
+                <Checkbox
+                    bind:group={selectedBrands}
+                    value="dell"
+                    class="checkbox">Dell</Checkbox
+                >
+            </li>
+            <li>
+                <Checkbox
+                    bind:group={selectedBrands}
+                    value="msi"
+                    class="checkbox">Msi</Checkbox
+                >
+            </li>
+            <li>
+                <Checkbox
+                    bind:group={selectedBrands}
+                    value="lenovo"
+                    class="checkbox">Lenovo</Checkbox
+                >
+            </li>
+        </ul>
+    </nav>
+</aside>
